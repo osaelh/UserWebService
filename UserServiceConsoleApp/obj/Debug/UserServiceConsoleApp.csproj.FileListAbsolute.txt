@@ -1,0 +1,7 @@
+C:\Users\bureau2\source\repos\UserServiceConsoleApp\bin\Debug\UserServiceConsoleApp.exe.config
+C:\Users\bureau2\source\repos\UserServiceConsoleApp\bin\Debug\UserServiceConsoleApp.exe
+C:\Users\bureau2\source\repos\UserServiceConsoleApp\bin\Debug\UserServiceConsoleApp.pdb
+C:\Users\bureau2\source\repos\UserServiceConsoleApp\obj\Debug\UserServiceConsoleApp.csprojAssemblyReference.cache
+C:\Users\bureau2\source\repos\UserServiceConsoleApp\obj\Debug\UserServiceConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\bureau2\source\repos\UserServiceConsoleApp\obj\Debug\UserServiceConsoleApp.exe
+C:\Users\bureau2\source\repos\UserServiceConsoleApp\obj\Debug\UserServiceConsoleApp.pdb

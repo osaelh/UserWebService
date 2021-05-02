@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserServiceConsoleApp", "UserServiceConsoleApp.csproj", "{6C654352-7373-4E1B-BA9E-F350B1137F8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C654352-7373-4E1B-BA9E-F350B1137F8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C654352-7373-4E1B-BA9E-F350B1137F8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C654352-7373-4E1B-BA9E-F350B1137F8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C654352-7373-4E1B-BA9E-F350B1137F8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6AE5B49F-99F1-43E6-9E83-0B44F43E2ECD}
+	EndGlobalSection
+EndGlobal

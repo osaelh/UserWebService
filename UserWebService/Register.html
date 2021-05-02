@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+
+ 
+
+  <!-- Main css -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <div id="signup">
+
+      <div class="header">
+
+        <h3>Sign Up</h3>
+
+        <p>You want to fill out this form</p>
+
+      </div>
+
+      <div class="sep"></div>
+
+      <div class="inputs">
+
+        <input type="Text" placeholder="Username" required id="username" autofocus />
+        <input type="Text" placeholder="FirstNmae" required id="firstname" />
+        <input type="Text" placeholder="LastName" required id="lastname" />
+
+        <input type="password" placeholder="Password" required id="password" />
+
+
+
+        <Button id="submit"  >Register</Button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+  <script src="Scripts/jquery-3.6.0.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#submit').click(function () {
+
+        console.log("test")
+
+        var username = $('#username').val();
+        var password = $('#password').val();
+        var lastname = $('#lastname').val();
+        var firstname = $('#firstname').val();
+
+        $.ajax({
+          url: 'UserWebService.asmx/CreatUser',
+          data: { username: username, password: password, firstname: firstname, lastname: lastname },
+          method: 'Post',
+          dataType: 'xml',
+          success: function (data) {
+            console.log(data);
+            window.location.href = 'login.html';
+
+          },
+          error: function (err) {
+            alert(err);
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+
+</html>

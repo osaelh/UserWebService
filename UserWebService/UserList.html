@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h2>users table</h2>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>
+          username
+        </th>
+        <th>
+          firstname
+        </th>
+        <th>
+          lastname
+        </th>
+
+
+      </tr>
+    </thead>
+
+    <tbody id="tablebody">
+    </tbody>
+  </table>
+
+  <script src="Scripts/jquery-3.6.0.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $.ajax({
+        url: 'UserWebService.asmx/UsersList',
+
+        method: 'Post',
+        dataType: 'xml',
+        success: function (data) {
+
+          console.log(data);
+
+          var users = data.getElementsByTagName("User");
+          for (var y = 0; y < users.length; y++) {
+            var tr = document.createElement("tr");
+            for (var i = 1; i < users[y].children.length; i++) {
+
+              var td = document.createElement("td");
+              td.innerHTML = users[y].children[i].innerHTML
+              tr.appendChild(td);
+              document.getElementById("tablebody").appendChild(tr);
+              console.log(users[y].children[i])
+            }
+
+          }
+        },
+        error: function (err) {
+          alert(err);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
